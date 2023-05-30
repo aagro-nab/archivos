@@ -1,0 +1,61 @@
+@font-face
+{
+    font-family: "Tequilla Sunrise";
+    src: url(fonts/Tequilla\ Sunrise.ttf);
+}
+@font-face
+{
+    font-family: "Purple Smile";
+    src: url(fonts/Purple\ Smile.ttf);
+}
+
+body
+{
+    background-image: url(fondv.jpg);
+}
+
+#ContForm
+{
+    text-align: center;
+    background-image: url(fondc.jpg);
+    width: 350px;
+    height: 350px;
+    border-radius: 25px 25px 25px 25px;
+    border: 4px dotted black;
+}
+
+h1
+{
+    font-family:"Tequilla Sunrise",serif;
+    text-align: center;
+}
+h2
+{
+    font-size:x-large;
+}
+label
+{
+    font-size:medium;
+}
+#nomb
+{
+    height: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#casa
+{
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+#ben
+{
+    height: 30px;
+    width: 150px;
+    font-family:"Tequilla Sunrise",serif; 
+    border-radius: 25px 25px 25px 25px;
+}
+#sub
+{
+    font-size: medium;
+}
