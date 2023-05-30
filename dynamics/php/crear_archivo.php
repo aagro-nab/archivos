@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="..\..\statics\styles\archivos.css">
+    <title>Creacion de archivo</title>
 </head>
 <body>
     <?php
@@ -35,10 +36,11 @@
                 echo "ERROR: No se puede crear el archivo porque ya existe otro archivo con ese nombre";
             else
                 $archivo = fopen("../../statics/files/$nombre.txt", "w+b");
+                //echo "Se ha creado el archivo";
         } 
         else 
         {
-            $carpeta = "../../statics/files/ojo/$nombre";   
+            $carpeta = "../../statics/files/$nombre";   
             if(file_exists($carpeta))
                 echo "ERROR: No se puede crear el directorio porque ya existe una carpeta con ese nombre";
             else

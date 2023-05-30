@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="..\..\statics\styles\archivos.css">
+    <title>Escoger Tipo de Archivo</title>
 </head>
 <body>
     <?php
         $usuario = "Julieta";
-        echo "<p> Especifica que archivo vas a crear ".$usuario."</p>";
+        echo "<div class=\"subtitulo\"> Especifica que archivo vas a crear, ".$usuario."</div>";
     ?>
-        <p><br> ¿Archivo o carpeta? </p>
-        <form class="form" action="./crear_archivo.php" method="post" enctype="multipart/form-data" target="_self">
+        <section class="cuerpo"> 
+            
+            <div class="formulario"><p> ¿Archivo o carpeta? </p>
+            <form class="form" action="./crear_archivo.php" method="post" enctype="multipart/form-data" target="_self">
 
-            <label for="tipo_archivo"><br>Archivo</label>
-            <input type="radio" name="tipo_archivo" value="archivo"/>
+                <div class = "opciones">
+                    <div class = "opcion">
+                        <div> <label for="tipo_archivo">Archivo</label> </div>
+                        <div> <input type="radio" name="tipo_archivo" value="archivo"/> </div>
+                    </div>
+                    
+                    <div class = "opcion">
+                        <div> <label for="tipo_archivo">Carpeta</label> </div>
+                        <div> <input type="radio" name="tipo_archivo" value="carpeta"/> </div>
+                    </div>
+                </div>
 
-            <br>   
+                <label for="nombre_archivo"><p>Nombre del archivo o carpeta</p></label>
+                <div class = "opciones"> <input type="text" name="nombre"/> </div>
 
-            <label for="tipo_archivo"><br>Carpeta</label>
-            <input type="radio" name="tipo_archivo" value="carpeta"/>
-                
-            <br>
+                <br><br>
 
-            <label for="nombre_archivo"><br>Nombre del archivo o carpeta<br><br></label>
-            <input type="text" name="nombre"/>
-
-            <br><br>
-
-            <button type="submit"> Aceptar </button>
-        </form>
+                <div class = "opciones"> <button type="submit"> Aceptar </div>
+            </form></div>
+        </section>
 </body>
 </html>
