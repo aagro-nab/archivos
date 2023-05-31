@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="..\..\statics\styles\archivos.css">
+    <title>Escoger Tipo de Archivo</title>
 </head>
 <body>
     <?php
         session_start();
         $opcion = (isset($_POST["opcion"]) && $_POST["opcion"] !="")? $_POST["opcion"] : "Falta tu usuario";
-        $elegido=0;
     
     if($opcion=="crear")
     {
@@ -80,6 +80,6 @@
             <button type='submit'> Eliminar </button>
         </form>";
     }
-    ?>
+    ?>   
 </body>
 </html>
